@@ -16,7 +16,7 @@
  * Note:
  * You can assume that you can always reach the last index.
  */
-public class Q045_JumpGameII {
+public class U_Q045_JumpGameII {
     //牛逼
     public int jump(int[] nums) {
         int n = nums.length;
