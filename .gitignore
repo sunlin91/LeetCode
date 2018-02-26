@@ -1,0 +1,8 @@
+# Windows: (使用windows用户，过滤存放图片文件夹下生成的缩略图)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+#my
+/.idea/*
+/target/*
+*.iml
