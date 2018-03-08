@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * 输出描述:
  * 输出所有和为S的连续正数序列。序列内按照从小至大的顺序，序列间按照开始数字从小到大的顺序
  */
-public class FindContinuousSequence {
+public class Q41_FindContinuousSequence {
     public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
         int left = 1,right;
         int curSum=1;
