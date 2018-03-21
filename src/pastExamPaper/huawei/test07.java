@@ -1,4 +1,4 @@
-package huawei;
+package pastExamPaper.huawei;
 
 import java.util.ArrayList;
 import java.util.List;
