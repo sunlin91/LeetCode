@@ -52,4 +52,26 @@ public class Main {
         }
         System.out.println(res);
     }
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        String s = sc.next();
+//        String t =sc.next();
+//        int res = 0;
+//        for (int i=0;i<s.length() - t.length() + 1;i++){
+//            res+=helper(t,s.substring(i,i+t.length()));
+//        }
+//        System.out.println(res);
+//
+//    }
+//    static int helper(String t,String sub){
+//        int l = t.length();
+//        int i=0;
+//        int dis = 0;
+//        while (i<l){
+//            if (t.charAt(i)!=sub.charAt(i))
+//                dis++;
+//            i++;
+//        }
+//        return dis;
+//    }
 }

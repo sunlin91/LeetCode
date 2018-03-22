@@ -20,16 +20,16 @@ public class Main2 {
             i++;
         }
     }
-    static boolean helper(int[] array,int number){
+    static boolean helper(int[] array,int num){
         int[] a = new int[array.length];
         for (int i = 0;i<array.length;i++){
             a[i]=array[i];
         }
-        while (number!=0){
-            int tmp = number%10;
+        while (num!=0){
+            int tmp = num%10;
             if (a[tmp]<=0) return false;
             else {
-                number/=10;
+                num/=10;
                 a[tmp]--;
             }
         }
