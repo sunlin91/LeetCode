@@ -6,6 +6,7 @@ package SwordRefersToOffer;
  * 输入一个数组,求出这个数组中的逆序对的总数P。并将P对1000000007取模的结果输出。 即输出P%1000000007
  */
 public class Q36_InversePairs {
+
     public int InversePairs(int [] array) {
         if(array==null||array.length==0)
         {
