@@ -4,7 +4,7 @@ package SwordRefersToOffer;
  * Created by SUN on 2018/3/6
  * 输入两个链表，找出它们的第一个公共结点
  */
-public class FindFirstCommonNode {
+public class Q37_FindFirstCommonNode {
     public class ListNode {
         int val;
         ListNode next = null;
