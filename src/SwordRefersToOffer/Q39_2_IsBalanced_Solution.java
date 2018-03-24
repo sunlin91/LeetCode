@@ -5,7 +5,7 @@ package SwordRefersToOffer;
  * 输入一棵二叉树，判断该二叉树是否是平衡二叉树。
 
  */
-public class IsBalanced_Solution {
+public class Q39_2_IsBalanced_Solution {
     public class TreeNode {
         int val = 0;
         TreeNode left = null;

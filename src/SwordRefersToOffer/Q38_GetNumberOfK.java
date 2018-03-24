@@ -4,7 +4,7 @@ package SwordRefersToOffer;
  * Created by SUN on 2018/3/6
  * 统计一个数字在排序数组中出现的次数。
  */
-public class GetNumberOfK {
+public class Q38_GetNumberOfK {
     public int GetNumberOfK(int[] array, int k) {
         if (array == null || array.length == 0)
             return 0;
