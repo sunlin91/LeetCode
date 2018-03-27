@@ -10,19 +10,13 @@ public class wangyi2018test02 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int k = sc.nextInt();
-
-        if (n >= 100000 || k > n) {
-            System.out.println(0);
-
-            return;
+        int res = 0;
+        for (int i = k; i < n; i++) {
+            res += n - i;
         }
-        int count = 0;
-        for (int i = n; i >= k; i--) {
-            for (int j = n; j >= k; j--) {
-                if (i % j >= k)
-                    count++;
-            }
+        for (int i=n;i-(k+1)>k;i--){
+            res+=(i-(k+1))-(k+1)+1;
         }
-        System.out.println(count);
+        System.out.println(res);
     }
 }
