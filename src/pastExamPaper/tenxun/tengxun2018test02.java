@@ -22,11 +22,14 @@ public class tengxun2018test02 {
             for (int b=0;b<=(K/B);b++){
                 if ((a*A+b*B)==K){
                     res+=helper(X,a,Y,b);
-                    if (res>1000000007){
-                        res%=1000000007;
-                    }
+                }
+                if ((a*A+b*B)>K){
+                    break;
                 }
             }
+        }
+        if (res>1000000007){
+            res%=1000000007;
         }
         System.out.println((int)res);
     }
