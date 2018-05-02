@@ -26,6 +26,7 @@ import java.util.Stack;
  \
  6
  */
+
 public class Q114_FlattenBinaryTreetoLinkedList {
     public class TreeNode {
       int val;
