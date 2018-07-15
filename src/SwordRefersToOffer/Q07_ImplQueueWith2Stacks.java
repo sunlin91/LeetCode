@@ -11,6 +11,7 @@ public class Q07_ImplQueueWith2Stacks {
     Stack<Integer> stack1 = new Stack<Integer>();
     Stack<Integer> stack2 = new Stack<Integer>();
 
+    //多线程环境需要考虑加锁
     public void push(int node) {
         stack1.push(node);
     }

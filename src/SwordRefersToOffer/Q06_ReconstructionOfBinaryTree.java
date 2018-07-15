@@ -30,25 +30,13 @@ public class Q06_ReconstructionOfBinaryTree {
                 }
                 if(i==-1)
                     return null;
-                else if(i==0){
-                    int[] r_pre = copyArray(pre,i+1,pre.length-1);
-                    int[] r_in = copyArray(in,i+1,in.length-1);
-                    root.right = reConstructBinaryTree(r_pre,r_in);
-                }//没有左子树
-                else if(i==in.length-1){
-                    int[] l_pre = copyArray(pre,1,i);
-                    int[] l_in = copyArray(in,0,i-1);
-                    root.left = reConstructBinaryTree(l_pre,l_in);
-                }//没有右子树
                 else{
                     int[] l_pre =copyArray(pre,1,i);
                     int[] l_in = copyArray(in,0,i-1);
                     root.left = reConstructBinaryTree(l_pre,l_in);
-
                     int[] r_pre = copyArray(pre,i+1,pre.length-1);
                     int[] r_in = copyArray(in,i+1,in.length-1);
                     root.right = reConstructBinaryTree(r_pre,r_in);
-
                 }
             }
             return root;

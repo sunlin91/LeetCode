@@ -9,37 +9,37 @@ package SwordRefersToOffer;
  * NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。
  */
 public class Q08_MinimumOfRotateArray {
-    public int minNumberInRotateArray(int[] array) {
-        if (array==null||array.length==0)
+    //二分查找
+    public int minNumberInRotateArray(int [] array) {
+        if(array.length==0)
             return 0;
-        int min =array[0];
-        for (int i=1;i<array.length;i++){
-            if (array[i]<min){
-                return array[i];
+        int low=0;
+        int high=array.length-1;
+        int mid=(high+low)/2;
+        while(array[low]>=array[high]){
+            if(high-low==1){
+                mid=high;
+                break;
+            }
+            mid = (high + low) / 2;
+            if (array[mid] > array[high]) {
+                low = mid;
+            } else if(array[mid] <= array[high]){
+                high = mid;
             }
         }
-        return min;
+        return array[mid];
     }
-    //二分查找
-//    public int minNumberInRotateArray(int [] array) {
-//        if(array.length==0)
+//    public int minNumberInRotateArray(int[] array) {
+//        if (array==null||array.length==0)
 //            return 0;
-//        int low=0;
-//        int high=array.length-1;
-//        int mid=(high+low)/2;
-//        while(array[low]>=array[high]){
-//            if(high-low==1){
-//                mid=high;
-//                break;
-//            }
-//            if (array[mid] > array[high]) {
-//                low = mid;
-//                mid = (high + low) / 2;
-//            } else if(array[mid] <= array[high]){
-//                high = mid;
-//                mid = (high + low) / 2;
+//        int min =array[0];
+//        for (int i=1;i<array.length;i++){
+//            if (array[i]<min){
+//                return array[i];
 //            }
 //        }
-//        return array[mid];
+//        return min;
 //    }
+
 }
